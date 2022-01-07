@@ -31,7 +31,7 @@ export const Content = styled.div`
 
 export const Text = styled.div`
   z-index: 100;
-  max-width: 700px:
+  max-width: 700px;
   position: absolute;
   bottom: 40px;
   margin-right: 20px;
@@ -39,22 +39,22 @@ export const Text = styled.div`
   color: var(--white);
 
   h1 {
-      font-size: var(--fontSuperBig)
+    font-size: var(--fontSuperBig);
 
-      @media screen and (max-width: 720px){
-          font-size: var(--fontBig)
-      }
+    @media screen and (max-width: 720px) {
+      font-size: var(--fontBig);
+    }
   }
 
   p {
-      font-size: var(--fontMed)
+    font-size: var(--fontMed);
 
-      @media screen and (max-width: 720px){
-          font-size: var(--fontSmall)
-      }
+    @media screen and (max-width: 720px) {
+      font-size: var(--fontSmall);
+    }
   }
 
   @media screen and (max-width: 720px) {
-      max-width: 100%
+    max-width: 100%;
   }
 `;
