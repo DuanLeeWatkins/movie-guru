@@ -1,4 +1,4 @@
-import { isValidInputTimeValue } from "@testing-library/user-event/dist/utils";
+
 import React, { useState, useEffect, useRef } from "react";
 
 //Image
@@ -9,12 +9,12 @@ import { Wrapper, Content } from "./SearchBar.styles";
 
 const SearchBar = ({ setSearchTerm }) => {
   const [state, setState] = useState("");
-  const inital = useRef(true);
+  const initial = useRef(true);
 
   useEffect(() => {
-    if (inital.current) {
-        inital.current = false;
-        return;
+    if (initial.current) {
+      initial.current = false;
+      return;
     }
     const timer = setTimeout(() => {
       setSearchTerm(state);
